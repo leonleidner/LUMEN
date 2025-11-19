@@ -69,6 +69,15 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link
+                            href="/projects"
+                            className="nav-link"
+                            style={{ color: isActive('/projects') ? 'var(--color-text-main)' : '' }}
+                        >
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
                             href="/about"
                             className="nav-link"
                             style={{ color: isActive('/about') ? 'var(--color-text-main)' : '' }}
