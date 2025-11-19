@@ -22,10 +22,10 @@ export default function Projects() {
         },
         {
             id: 2,
-            title: 'DataViz Dashboard',
-            description: 'Interactive dashboard for visualizing complex datasets using D3.js and React.',
-            tags: ['D3.js', 'Data Visualization', 'Analytics'],
-            githubLink: '#',
+            title: 'Data Science Agent',
+            description: 'A powerful multi-agent system for automated data analysis, leveraging CrewAI, Python, and FastAPI with a Next.js frontend.',
+            tags: ['CrewAI', 'Python', 'FastAPI', 'Next.js', 'AI Agents'],
+            githubLink: 'https://github.com/leonleidner/Data-Science-Agent',
             icon: (
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
