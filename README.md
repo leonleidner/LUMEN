@@ -1,4 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LUMEN Data Science Initiative
+
+**Ludwigshafen University of Business and Society**
+
+LUMEN is a student-driven initiative dedicated to bridging the gap between academic theory and the fast-paced reality of the tech industry. We empower students to become the next generation of data leaders through hands-on projects, workshops, and industry collaboration.
+
+[Visit our Website](https://leonleidner.github.io/LUMEN/)
+
+## Our Mission
+
+We believe that data literacy is the literacy of the 21st century. Our mission is to democratize data science and make it accessible to everyone, regardless of their background. We foster a community of innovation, excellence, and collaboration.
+
+## Our Program
+
+We operate on two main tracks to cater to different career paths and interests:
+
+### 1. LUMEN Campus (Education & Community)
+Focuses on skill acquisition, practice, and networking.
+- **Education & Academy**: Bootcamps (Data Science 101), Tool Workshops (PowerBI, Cloud, SQL), and Paper Reading Groups.
+- **Practice & Competition**: Internal Hackathons, Kaggle Nights, and Data Dives (fun portfolio projects).
+- **Career & Networking**: Company Visits (BASF, SAP), Fireside Chats with experts, and CV Checks.
+
+### 2. LUMEN Consulting (Business & Strategy)
+Focuses on real-world application and delivering value to clients.
+- **Strategy & Consulting**: Data Maturity Assessments, Use Case Workshops, and Tool Evaluation.
+- **Business Intelligence & Analytics**: Dashboarding, Process Automation, and Process Mining.
+- **Data Science & AI Development**: Rapid Prototyping (MVPs), Customer Analytics, and Web Scraping.
+
+## Projects
+
+Explore some of the open-source projects and initiatives driven by our community:
+
+- **LUMEN Website**: The official website you are looking at right now. [View on GitHub](https://github.com/leonleidner/LUMEN)
+- **DataViz Dashboard**: Interactive dashboard for visualizing complex datasets.
+- **NLP Sentiment Analyzer**: Machine learning model for social media sentiment analysis.
+- **Predictive Maintenance**: IoT solution for predicting equipment failures.
+- **Computer Vision API**: REST API for object detection and image classification.
+
+## Tech Stack
+
+This website is built with:
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Styling**: CSS Modules & Global CSS (Glassmorphism, Dark Theme)
+- **Deployment**: GitHub Pages
 
 ## Getting Started
 
@@ -6,31 +49,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
