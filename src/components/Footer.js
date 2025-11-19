@@ -9,7 +9,7 @@ export default function Footer() {
                         <Link href="/" className="logo">
                             LUMEN<span style={{ color: 'var(--color-primary)' }}>.</span>
                         </Link>
-                        <p>Hochschule für Wirtschaft und Gesellschaft Ludwigshafen</p>
+                        <p>Ludwigshafen University of Business and Society</p>
                     </div>
                     <div className="footer-col">
                         <h4>Initiative</h4>
@@ -17,6 +17,7 @@ export default function Footer() {
                             <li><Link href="/mission">Mission</Link></li>
                             <li><Link href="/vision">Vision</Link></li>
                             <li><Link href="/program">Program</Link></li>
+                            <li><Link href="/projects">Projects</Link></li>
                             <li><Link href="/about">About Us</Link></li>
                         </ul>
                     </div>
