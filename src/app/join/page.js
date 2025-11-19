@@ -35,7 +35,7 @@ export default function Join() {
                                 Interested in joining our workshops, hackathons, or becoming a team member? Join our community channels to stay updated.
                             </p>
                             <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
-                                <a href="#" className="btn btn-primary">Join Discord</a>
+                                <a href="https://discord.gg/VYZRbTCaXA" className="btn btn-primary">Join Discord</a>
                                 <a href="#" className="btn btn-secondary">WhatsApp Group</a>
                             </div>
                         </div>
