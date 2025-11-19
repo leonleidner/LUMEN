@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -19,6 +20,10 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const pathname = usePathname();
+
+    const isActive = (path) => pathname === path;
+
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="container nav-container">
@@ -26,13 +31,53 @@ export default function Navbar() {
                     LUMEN<span style={{ color: 'var(--color-primary)' }}>.</span>
                 </Link>
                 <ul className="nav-links">
-                    <li><Link href="/" className="nav-link" style={{ color: 'var(--color-text-main)' }}>Home</Link></li>
-                    <li><Link href="/mission" className="nav-link">Mission</Link></li>
-                    <li><Link href="/vision" className="nav-link">Vision</Link></li>
-                    <li><Link href="/program" className="nav-link">Program</Link></li>
-                    <li><Link href="/about" className="nav-link">About</Link></li>
+                    <li>
+                        <Link
+                            href="/"
+                            className="nav-link"
+                            style={{ color: isActive('/') ? 'var(--color-text-main)' : '' }}
+                        >
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/mission"
+                            className="nav-link"
+                            style={{ color: isActive('/mission') ? 'var(--color-text-main)' : '' }}
+                        >
+                            Mission
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/vision"
+                            className="nav-link"
+                            style={{ color: isActive('/vision') ? 'var(--color-text-main)' : '' }}
+                        >
+                            Vision
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/program"
+                            className="nav-link"
+                            style={{ color: isActive('/program') ? 'var(--color-text-main)' : '' }}
+                        >
+                            Program
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/about"
+                            className="nav-link"
+                            style={{ color: isActive('/about') ? 'var(--color-text-main)' : '' }}
+                        >
+                            About
+                        </Link>
+                    </li>
                 </ul>
-                <Link href="/#join" className="btn btn-primary">Join Us</Link>
+                <Link href="/join" className="btn btn-primary">Join Us</Link>
             </div>
         </nav>
     );
