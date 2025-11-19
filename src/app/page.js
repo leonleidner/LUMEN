@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { useTypeWriter } from '@/hooks/useTypeWriter';
+import HeroAnimation from '@/components/HeroAnimation';
 
 export default function Home() {
     useScrollAnimation();
@@ -33,6 +34,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            <HeroAnimation />
 
             {/* Features Section */}
             <section className="section" id="features">

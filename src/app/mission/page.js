@@ -1,6 +1,7 @@
 'use client';
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import HeroAnimation from '@/components/HeroAnimation';
 
 export default function Mission() {
     useScrollAnimation();
@@ -18,6 +19,8 @@ export default function Mission() {
                     </div>
                 </div>
             </section>
+
+            <HeroAnimation />
 
             <section className="section">
                 <div className="container">

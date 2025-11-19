@@ -2,6 +2,7 @@
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import Link from 'next/link';
+import HeroAnimation from '@/components/HeroAnimation';
 
 export default function Join() {
     useScrollAnimation();
@@ -20,6 +21,8 @@ export default function Join() {
                     </div>
                 </div>
             </section>
+
+            <HeroAnimation />
 
             {/* Contact Options */}
             <section className="section">
