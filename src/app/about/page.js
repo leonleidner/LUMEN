@@ -40,43 +40,37 @@ export default function About() {
         },
         {
             id: 2,
-            initials: 'F2',
-            name: 'Founder Name',
-            role: 'Role / Position',
+            initials: 'FH',
+            name: 'Fabian Holzer',
+            role: 'Lead Data Scientist',
             bio: 'Short bio describing their background, expertise, and vision for the initiative.',
             experience: [
                 {
-                    period: '2022 - Present',
-                    role: 'AI Research Scientist',
-                    company: 'Research Institute',
+                    period: '10/2025 - Present',
+                    role: 'Intern Data Scientist',
+                    company: 'Syntax',
                     description: 'Conducting cutting-edge research in computer vision and publishing papers in top conferences.'
                 },
                 {
-                    period: '2020 - 2022',
-                    role: 'Data Engineer',
-                    company: 'Big Data Solutions',
+                    period: '03/2024 - 09/2025',
+                    role: 'Intern Data Engineer',
+                    company: 'Haas Media',
                     description: 'Built scalable data pipelines and infrastructure to handle petabytes of data.'
                 }
             ]
         },
         {
             id: 3,
-            initials: 'F3',
-            name: 'Founder Name',
-            role: 'Role / Position',
+            initials: 'SF',
+            name: 'Schajan Farahani',
+            role: 'Lead Fullstack Developer',
             bio: 'Short bio describing their background, expertise, and vision for the initiative.',
             experience: [
                 {
-                    period: '2023 - Present',
-                    role: 'Product Manager (Data)',
-                    company: 'SaaS Unicorn',
+                    period: '09/2024 - Present',
+                    role: 'Intern Fullstack Developer',
+                    company: 'HWG Ludwigshafen',
                     description: 'Defining the product roadmap for data-driven features and collaborating with engineering teams.'
-                },
-                {
-                    period: '2021 - 2023',
-                    role: 'Business Intelligence Lead',
-                    company: 'E-commerce Giant',
-                    description: 'Led the BI team to provide actionable insights and optimize marketing spend.'
                 }
             ]
         }
@@ -88,10 +82,10 @@ export default function About() {
             <section className="section" style={{ paddingTop: '150px', paddingBottom: '50px' }}>
                 <div className="container">
                     <div className="section-header fade-in-up">
-                        <span className="hero-subtitle">Our Mission</span>
-                        <h1>Democratizing Data Science</h1>
+                        <span className="hero-subtitle">The Group</span>
+                        <h1>Join us!</h1>
                         <p style={{ fontSize: '1.2rem', maxWidth: '700px', margin: '0 auto' }}>
-                            We believe that data literacy is the literacy of the 21st century. LUMEN exists to bridge the gap between academic theory and the fast-paced reality of the tech industry.
+                            We are a team of passionate individuals who are dedicated to making data science accessible to everyone. We believe that data literacy is the literacy of the 21st century.
                         </p>
                     </div>
                 </div>
