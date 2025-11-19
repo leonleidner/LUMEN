@@ -2,9 +2,84 @@
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import HeroAnimation from '@/components/HeroAnimation';
+import FounderModal from '@/components/FounderModal';
+import { useState } from 'react';
 
 export default function About() {
     useScrollAnimation();
+    const [selectedFounder, setSelectedFounder] = useState(null);
+
+    const founders = [
+        {
+            id: 1,
+            initials: 'F1',
+            name: 'Founder Name',
+            role: 'Role / Position',
+            bio: 'Short bio describing their background, expertise, and vision for the initiative.',
+            experience: [
+                {
+                    period: '2023 - Present',
+                    role: 'Senior Data Scientist',
+                    company: 'Tech Giant Corp',
+                    description: 'Leading a team of 5 data scientists working on large language models and generative AI applications.'
+                },
+                {
+                    period: '2021 - 2023',
+                    role: 'Machine Learning Engineer',
+                    company: 'Innovative Startup',
+                    description: 'Developed and deployed recommendation systems serving millions of users daily.'
+                },
+                {
+                    period: '2019 - 2021',
+                    role: 'Data Analyst',
+                    company: 'Global Finance Ltd',
+                    description: 'Conducted statistical analysis and built dashboards to drive business decisions.'
+                }
+            ]
+        },
+        {
+            id: 2,
+            initials: 'F2',
+            name: 'Founder Name',
+            role: 'Role / Position',
+            bio: 'Short bio describing their background, expertise, and vision for the initiative.',
+            experience: [
+                {
+                    period: '2022 - Present',
+                    role: 'AI Research Scientist',
+                    company: 'Research Institute',
+                    description: 'Conducting cutting-edge research in computer vision and publishing papers in top conferences.'
+                },
+                {
+                    period: '2020 - 2022',
+                    role: 'Data Engineer',
+                    company: 'Big Data Solutions',
+                    description: 'Built scalable data pipelines and infrastructure to handle petabytes of data.'
+                }
+            ]
+        },
+        {
+            id: 3,
+            initials: 'F3',
+            name: 'Founder Name',
+            role: 'Role / Position',
+            bio: 'Short bio describing their background, expertise, and vision for the initiative.',
+            experience: [
+                {
+                    period: '2023 - Present',
+                    role: 'Product Manager (Data)',
+                    company: 'SaaS Unicorn',
+                    description: 'Defining the product roadmap for data-driven features and collaborating with engineering teams.'
+                },
+                {
+                    period: '2021 - 2023',
+                    role: 'Business Intelligence Lead',
+                    company: 'E-commerce Giant',
+                    description: 'Led the BI team to provide actionable insights and optimize marketing spend.'
+                }
+            ]
+        }
+    ];
 
     return (
         <main>
@@ -31,77 +106,47 @@ export default function About() {
                         <p>The minds behind LUMEN.</p>
                     </div>
                     <div className="grid-3">
-                        {/* Founder 1 */}
-                        <div className="card fade-in-up delay-200" style={{ textAlign: 'center' }}>
-                            <div style={{
-                                width: '120px',
-                                height: '120px',
-                                borderRadius: '50%',
-                                backgroundColor: 'var(--color-surface-light)',
-                                margin: '0 auto 20px',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                fontSize: '2rem',
-                                color: 'var(--color-primary)'
-                            }}>
-                                F1
+                        {founders.map((founder, index) => (
+                            <div
+                                key={founder.id}
+                                className={`card fade-in-up delay-${(index + 2) * 100} cursor-pointer hover:border-teal-500/30 transition-all duration-300 group`}
+                                style={{ textAlign: 'center' }}
+                                onClick={() => setSelectedFounder(founder)}
+                            >
+                                <div style={{
+                                    width: '120px',
+                                    height: '120px',
+                                    borderRadius: '50%',
+                                    backgroundColor: 'var(--color-surface-light)',
+                                    margin: '0 auto 20px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontSize: '2rem',
+                                    color: 'var(--color-primary)',
+                                    transition: 'transform 0.3s ease'
+                                }} className="group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(45,212,191,0.3)]">
+                                    {founder.initials}
+                                </div>
+                                <h3 className="card-title group-hover:text-teal-400 transition-colors">{founder.name}</h3>
+                                <p style={{ color: 'var(--color-primary)', marginBottom: '10px' }}>{founder.role}</p>
+                                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>
+                                    {founder.bio}
+                                </p>
+                                <div className="mt-4 text-sm text-teal-400 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                                    View Experience →
+                                </div>
                             </div>
-                            <h3 className="card-title">Founder Name</h3>
-                            <p style={{ color: 'var(--color-primary)', marginBottom: '10px' }}>Role / Position</p>
-                            <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>
-                                Short bio describing their background, expertise, and vision for the initiative.
-                            </p>
-                        </div>
-
-                        {/* Founder 2 */}
-                        <div className="card fade-in-up delay-300" style={{ textAlign: 'center' }}>
-                            <div style={{
-                                width: '120px',
-                                height: '120px',
-                                borderRadius: '50%',
-                                backgroundColor: 'var(--color-surface-light)',
-                                margin: '0 auto 20px',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                fontSize: '2rem',
-                                color: 'var(--color-primary)'
-                            }}>
-                                F2
-                            </div>
-                            <h3 className="card-title">Founder Name</h3>
-                            <p style={{ color: 'var(--color-primary)', marginBottom: '10px' }}>Role / Position</p>
-                            <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>
-                                Short bio describing their background, expertise, and vision for the initiative.
-                            </p>
-                        </div>
-
-                        {/* Founder 3 */}
-                        <div className="card fade-in-up delay-400" style={{ textAlign: 'center' }}>
-                            <div style={{
-                                width: '120px',
-                                height: '120px',
-                                borderRadius: '50%',
-                                backgroundColor: 'var(--color-surface-light)',
-                                margin: '0 auto 20px',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                fontSize: '2rem',
-                                color: 'var(--color-primary)'
-                            }}>
-                                F3
-                            </div>
-                            <h3 className="card-title">Founder Name</h3>
-                            <p style={{ color: 'var(--color-primary)', marginBottom: '10px' }}>Role / Position</p>
-                            <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>
-                                Short bio describing their background, expertise, and vision for the initiative.
-                            </p>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
+
+            <FounderModal
+                isOpen={!!selectedFounder}
+                onClose={() => setSelectedFounder(null)}
+                founder={selectedFounder || {}}
+            />
         </main>
     );
 }
