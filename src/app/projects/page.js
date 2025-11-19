@@ -79,7 +79,7 @@ export default function Projects() {
             <section className="section" style={{ paddingTop: '150px', paddingBottom: '50px' }}>
                 <div className="container">
                     <div className="section-header fade-in-up">
-                        <span className="hero-subtitle">Our Work</span>
+                        <span className="hero-subtitle">The Work</span>
                         <h1>Projects</h1>
                         <p style={{ fontSize: '1.2rem', maxWidth: '700px', margin: '0 auto' }}>
                             Explore the open-source projects and initiatives driven by the LUMEN community.

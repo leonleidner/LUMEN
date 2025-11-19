@@ -14,27 +14,27 @@ export default function About() {
             id: 1,
             initials: 'LL',
             name: 'Leon Leidner',
-            role: 'Lead AI Engineer',
+            role: 'Co-Founder & Lead AI Engineer',
             image: 'images/leon.png',
-            bio: 'Short bio describing their background, expertise, and vision for the initiative.',
+            bio: 'Passionate about bridging the gap between academic research and real-world business value through scalable code.',
             experience: [
                 {
                     period: '09/2025 - Present',
                     role: 'Intern AI Engineer',
                     company: 'Siemens AG',
-                    description: 'Internship at Siemens AG as an AI Engineer.'
+                    description: 'Architecting autonomous AI agents for financial anomaly detection and optimizing code performance by 45%.'
                 },
                 {
                     period: '03/2025 - 09/2025',
-                    role: 'Intern IT Management Consultant',
+                    role: 'Intern Management Consultant - Data & AI',
                     company: 'PwC',
-                    description: 'Internship at PwC as an IT Management Consultant.'
+                    description: 'Developed GenAI-based coding agents and calculated quantitative business cases for AI implementation.'
                 },
                 {
                     period: '03/2023 - 03/2025',
                     role: 'Intern Data Science',
                     company: 'Deutsches Forschungszentrum für Künstliche Intelligenz',
-                    description: 'Conducted statistical analysis and built dashboards to drive business decisions.'
+                    description: 'Applied NLP pipelines for automated document structuring and analyzed Industry 4.0 Digital Twin use cases.'
                 }
             ]
         },
@@ -42,7 +42,7 @@ export default function About() {
             id: 2,
             initials: 'FH',
             name: 'Fabian Holzer',
-            role: 'Lead Data Scientist',
+            role: 'Co-Founder & Lead Data Scientist',
             bio: 'Short bio describing their background, expertise, and vision for the initiative.',
             experience: [
                 {
@@ -63,7 +63,7 @@ export default function About() {
             id: 3,
             initials: 'SF',
             name: 'Schajan Farahani',
-            role: 'Lead Fullstack Developer',
+            role: 'Co-Founder & Lead Fullstack Developer',
             bio: 'Short bio describing their background, expertise, and vision for the initiative.',
             experience: [
                 {
