@@ -15,7 +15,7 @@ export default function About() {
             initials: 'LL',
             name: 'Leon Leidner',
             role: 'Lead AI Engineer',
-            image: 'src/public/images/leon.png',
+            image: 'images/leon.png',
             bio: 'Short bio describing their background, expertise, and vision for the initiative.',
             experience: [
                 {

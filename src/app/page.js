@@ -29,8 +29,8 @@ export default function Home() {
                         We are the catalyst for the next generation of data leaders. Connecting students with industry pioneers through workshops, hackathons, and networking.
                     </p>
                     <div className="hero-buttons fade-in-up delay-400">
-                        <Link href="/#join" className="btn btn-glow">Become a Member</Link>
-                        <Link href="/about" className="btn btn-primary">Learn More</Link>
+                        <Link href="/join" className="btn btn-glow">Become a Member</Link>
+                        <Link href="/mission" className="btn btn-primary">Learn More</Link>
                     </div>
                 </div>
             </section>
