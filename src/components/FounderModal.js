@@ -89,7 +89,7 @@ export default function FounderModal({ isOpen, onClose, founder }) {
                             width: '100px',
                             height: '100px',
                             borderRadius: '50%',
-                            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                            backgroundColor: 'transparent', // Changed from rgba(255, 255, 255, 0.05) to transparent
                             margin: '0 auto 1.5rem',
                             display: 'flex',
                             alignItems: 'center',
@@ -97,9 +97,21 @@ export default function FounderModal({ isOpen, onClose, founder }) {
                             fontSize: '2rem',
                             color: 'var(--color-primary)',
                             border: '2px solid var(--color-primary-glow)',
-                            boxShadow: '0 0 20px rgba(45, 212, 191, 0.2)'
+                            color: 'var(--color-primary)',
+                            border: '2px solid var(--color-primary-glow)',
+                            boxShadow: '0 0 20px rgba(45, 212, 191, 0.2)',
+                            overflow: 'hidden',
+                            position: 'relative'
                         }}>
-                            {founder.initials}
+                            {founder.image ? (
+                                <img
+                                    src={founder.image}
+                                    alt={founder.name}
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                            ) : (
+                                founder.initials
+                            )}
                         </div>
                         <h2 style={{
                             fontSize: '1.75rem',
