@@ -22,7 +22,7 @@ export default function Home() {
                             className="text-gradient-animated"
                         >
                             {displayText}
-                            <span className="cursor">|</span>
+                            <span className="cursor"></span>
                         </span>
                     </h1>
                     <p className="fade-in-up delay-300" style={{ fontSize: '1.25rem', marginTop: '1.5rem', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
