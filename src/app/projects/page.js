@@ -25,7 +25,8 @@ export default function Projects() {
             title: 'Data Science Agent',
             description: 'A powerful multi-agent system for automated data analysis, leveraging CrewAI, Python, and FastAPI with a Next.js frontend.',
             tags: ['CrewAI', 'Python', 'FastAPI', 'Next.js', 'AI Agents'],
-            githubLink: 'https://leonleidner.github.io/Data-Science-Agent/',
+            pageLink: 'https://leonleidner.github.io/Data-Science-Agent/',
+            githubLink: 'https://github.com/leonleidner/Data-Science-Agent',
             icon: (
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -35,39 +36,23 @@ export default function Projects() {
             )
         },
         {
-            id: 3,
-            title: 'NLP Sentiment Analyzer',
-            description: 'A machine learning model to analyze sentiment in social media posts using Python and Transformers.',
-            tags: ['Python', 'NLP', 'Machine Learning'],
-            githubLink: '#',
-            icon: (
+            "id": 3,
+            "title": "Data Intelligence Agent",
+            "description": "A full‑stack AI‑powered agent that translates natural‑language questions into SQL queries, executes them against a SQLite database, and returns results with interactive Plotly visualizations.",
+            "tags": [
+                "TypeScript",
+                "Next.js",
+                "FastAPI",
+                "LangChain",
+                "Plotly",
+                "SQL",
+                "AI"
+            ],
+            "pageLink": "https://leonleidner.github.io/text-to-sql-agent/",
+            "githubLink": "https://github.com/leonleidner/text-to-sql-agent",
+            "icon": (
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                </svg>
-            )
-        },
-        {
-            id: 4,
-            title: 'Predictive Maintenance',
-            description: 'IoT solution for predicting equipment failures before they happen using sensor data.',
-            tags: ['IoT', 'Predictive Analytics', 'Python'],
-            githubLink: '#',
-            icon: (
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
-                </svg>
-            )
-        },
-        {
-            id: 5,
-            title: 'Computer Vision API',
-            description: 'REST API for object detection and image classification powered by TensorFlow.',
-            tags: ['TensorFlow', 'API', 'Computer Vision'],
-            githubLink: '#',
-            icon: (
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                    <circle cx="12" cy="13" r="4"></circle>
                 </svg>
             )
         }
@@ -130,18 +115,36 @@ export default function Projects() {
                                     ))}
                                 </div>
 
-                                <a
-                                    href={project.githubLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn btn-primary"
-                                    style={{ width: '100%', marginTop: 'auto' }}
-                                >
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '0.5rem' }}>
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 11.61 6.44 11.86a3.37 3.37 0 0 0-.94 2.61V22"></path>
-                                    </svg>
-                                    View on GitHub
-                                </a>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: 'auto' }}>
+                                    {project.pageLink && (
+                                        <a
+                                            href={project.pageLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn btn-primary"
+                                            style={{ width: '100%' }}
+                                        >
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '0.5rem' }}>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                            View Live Demo
+                                        </a>
+                                    )}
+                                    <a
+                                        href={project.githubLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn btn-primary"
+                                        style={{ width: '100%' }}
+                                    >
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '0.5rem' }}>
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 11.61 6.44 11.86a3.37 3.37 0 0 0-.94 2.61V22"></path>
+                                        </svg>
+                                        View on GitHub
+                                    </a>
+                                </div>
                             </div>
                         ))}
                     </div>
